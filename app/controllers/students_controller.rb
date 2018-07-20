@@ -10,9 +10,8 @@ class StudentsController < ApplicationController
 
   def activate
     @student.toggle
-    @student.save
     redirect_to student_path(@student)
-
+    # redirect_to 'students/#{@student.id}'
   end
 
 

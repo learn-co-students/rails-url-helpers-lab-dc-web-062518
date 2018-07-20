@@ -5,5 +5,6 @@ class Student < ActiveRecord::Base
 
   def toggle
     self.active = !self.active
+    self.save
   end
 end
