@@ -5,6 +5,7 @@ class CreateStudents < ActiveRecord::Migration
       t.string :last_name
 
       t.timestamps null: false
+      t.string :status, :null => false, :default => false
     end
   end
 end
